@@ -104,6 +104,30 @@ print"$title"; ?></title>
 <div id="content">
     <img src=final1.png />
 </div>
+<div id='arc'>
+<font face=verdana color=red><u><a href='All.php'>ARCHIVES</a></u></font><?php
+																		include_once"scripts/connect.php";
+																		$arch='select count(*) from entries';
+																		$id=mysql_query($arch);
+																		$a=mysql_fetch_row($id);
+																		$b=$a[0];
+																		$str='('.$b.')';
+																		echo $str;
+																		
+																		?><br>
+<font face=verdana color=blue>January</font><br>
+<font face=verdana color=blue>February</font><br>
+<font face=verdana color=blue>March</font><br>
+<font face=verdana color=blue>April</font><br>
+<font face=verdana color=blue>May</font><br>
+<font face=verdana color=blue>June</font><br>
+<font face=verdana color=blue>July</font><br>
+<font face=verdana color=blue>August</font><br>
+<font face=verdana color=blue>September</font><br>
+<font face=verdana color=blue>October</font><br>
+<font face=verdana color=blue>November</font><br>
+<font face=verdana color=blue>December</font>
+</div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
