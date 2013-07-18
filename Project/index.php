@@ -136,6 +136,14 @@ print"$title"; ?></title>
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<div id=men>
+<ul id=menu>
+
+<li><a href="About.php"><font face=verdana>About</font></a></li>
+<li><a href="All.php"><font face=verdana>All Entries</font></a></li>
+<li><a href="poll.php"><font face=verdana>Poll Archives</font></a></li>
+<li><a href="video.php"><font face=verdana>Videos</font></a></li>
+</div>
 <font face="Arial, Helvetica, sans-serif">
 <div align="center">
 
@@ -197,11 +205,6 @@ print"$right_Move2"; ?></span><br /><br /></td>
 </div>
 </font>
 
-<ul id=menu>
 
-<li><a href="About.php"><font face=verdana>About</font></a></li>
-<li><a href="All.php"><font face=verdana>All Entries</font></a></li>
-<li><a href="poll.php"><font face=verdana>Poll Archives</font></a></li>
-<li><a href="video.php"><font face=verdana>Videos</font></a></li>
 </body>
 </html>
