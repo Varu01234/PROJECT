@@ -1,3 +1,4 @@
+
 <?php 
 include_once"scripts/connect.php";
 
@@ -80,12 +81,57 @@ $right_Move2 ='<a href="index.php?id=1">Oldest Article >></a>';
 <meta property="og:description"            content="A Write's Blog" /> 
 
 <head>
-
 <link rel="icon" 
 			type="image/jpg" 
 			href="logo.jpg" />
 			<title>Writer's Blog-Dare to Read</title>
 <link href="style/main.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+<script src="http://tab-slide-out.googlecode.com/files/jquery.tabSlideOut.v1.3.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+        $('.slide-out-div').tabSlideOut({
+            tabHandle: '.handle',                     //class of the element that will become your tab
+            pathToTabImage: 'images-CONTACT.png', //path to the image for the tab //Optionally can be set using css
+            imageHeight: '120px',                     //height of tab image           //Optionally can be set using css
+            imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
+            tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+            speed: 300,                               //speed of animation
+            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+            topPos: '400px',                          //position from the top/ use if tabLocation is left or right
+                                      //position from left/ use if tabLocation is bottom or top
+                                //options: true makes it stick(fixed position) on scroll
+        });
+
+    });
+	$(function(){
+        $('.log').tabSlideOut({
+            tabHandle: '.handl',                     //class of the element that will become your tab
+            pathToTabImage: 'login.jpg', //path to the image for the tab //Optionally can be set using css
+            imageHeight: '180px',                     //height of tab image           //Optionally can be set using css
+            imageWidth: '50px',                       //width of tab image            //Optionally can be set using css
+            tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+            speed: 300,                               //speed of animation
+            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+            topPos: '550px',                          //position from the top/ use if tabLocation is left or right
+                                      //position from left/ use if tabLocation is bottom or top
+                                //options: true makes it stick(fixed position) on scroll
+        });
+
+    });
+ </script>
+  <style type="text/css">
+      
+      .slide-out-div,.log {
+          padding: 20px;
+          width: 250px;
+          background: #ccc;
+          border: 1px solid #29216d;
+      }      
+   </style>
+
+
 <title><?php 
 
 print"$title"; ?></title>
@@ -105,7 +151,7 @@ print"$title"; ?></title>
     <img src=final1.png />
 </div>
 <div id='arc'>
-<font face=verdana color=red><u><a href='All.php'>ARCHIVES</a></u></font><?php
+<u><a href='All.php'><font face=verdana color=red>ARCHIVES</font></a></u><?php
 																		include_once"scripts/connect.php";
 																		$arch='select count(*) from entries';
 																		$id=mysql_query($arch);
@@ -115,18 +161,180 @@ print"$title"; ?></title>
 																		echo $str;
 																		
 																		?><br>
-<font face=verdana color=blue>January</font><br>
-<font face=verdana color=blue>February</font><br>
-<font face=verdana color=blue>March</font><br>
-<font face=verdana color=blue>April</font><br>
-<font face=verdana color=blue>May</font><br>
-<font face=verdana color=blue>June</font><br>
-<font face=verdana color=blue>July</font><br>
-<font face=verdana color=blue>August</font><br>
-<font face=verdana color=blue>September</font><br>
-<font face=verdana color=blue>October</font><br>
-<font face=verdana color=blue>November</font><br>
-<font face=verdana color=blue>December</font>
+<?php
+$jan=0;
+$feb=0;
+$mar=0;
+$apr=0;
+$may=0;
+$jun=0;
+$jul=0;
+$aug=0;
+$sep=0;
+$oct=0;
+$nov=0;
+$dec=0;
+
+include_once"scripts/connect.php";
+$strr='select date from entries';
+$id=mysql_query($strr);
+while($a=mysql_fetch_row($id))
+{
+	
+	
+	$f=explode('-',$a[0]);
+	$m=$f[1];
+	
+	if($m=='01')
+	{
+		$jan++;
+	}
+	else if($m=='02')
+	{
+		$feb++;
+	}
+	else if($m=='03')
+	{
+		$mar++;
+	}
+	else if($m=='04')
+	{
+		$apr++;
+	}
+	else if($m=='05')
+	{
+		$may++;
+	}
+	else if($m=='06')
+	{
+		$jun++;
+	}
+	else if($m=='07')
+	{
+		$jul++;
+	}
+	else if($m=='08')
+	{
+		$aug++;
+	}
+	else if($m=='09')
+	{
+		$sep++;
+	}
+	else if($m=='10')
+	{
+		$oct++;
+	}
+	else if($m=='11')
+	{
+		$nov++;
+	}
+	else if($m=='12')
+	{
+		$dec++;
+	}
+
+
+}
+
+
+?>
+<font face=verdana color=blue><?php
+									if($jan!=0)
+									{
+									$str='January'.'('.$jan.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($feb!=0)
+									{
+									$str='Febuary'.'('.$feb.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($mar!=0)
+									{
+									$str='March'.'('.$mar.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($apr!=0)
+									{
+									$str='April'.'('.$apr.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($may!=0)
+									{
+									$str='May'.'('.$may.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($jun!=0)
+									{
+									$str='June'.'('.$jun.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($jul!=0)
+									{
+									$str='July'.'('.$jul.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($aug!=0)
+									{
+									$str='August'.'('.$aug.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($sep!=0)
+									{
+									$str='September'.'('.$sep.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($oct!=0)
+									{
+									$str='October'.'('.$oct.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($nov!=0)
+									{
+									$str='November'.'('.$nov.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
+<font face=verdana color=blue><?php
+									if($dec!=0)
+									{
+									$str='December'.'('.$dec.')';
+									echo $str;
+									echo "<br>";
+									}
+									?></font>
 </div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -136,6 +344,7 @@ print"$title"; ?></title>
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
 <div id=men>
 <ul id=menu>
 
@@ -145,7 +354,7 @@ print"$title"; ?></title>
 <li><a href="video.php"><font face=verdana>Videos</font></a></li>
 </div>
 <font face="Arial, Helvetica, sans-serif">
-<div align="center">
+<div id=tab>
 
 
 <table width="400" align=center >
@@ -205,6 +414,23 @@ print"$right_Move2"; ?></span><br /><br /></td>
 </div>
 </font>
 
-
+ <div class="slide-out-div">
+            <a class="handle" href="http://link-for-non-js-users.html">Content</a>
+            <h3>Contact me</h3>
+            <p><ul>
+				<li><a href='http://gmail.com'>varadhan198@gmail.com</a>
+				<li><a>9488235681<a>
+				<li><a href='http://github.com/Varu01234'>www.github.com/Varu01234</a>
+				</ul></p>
+ </div>
+ <div class="log">
+            <a class="handl" href="http://link-for-non-js-users.html">Content</a>
+            <h3>Contact me</h3>
+            <p><ul>
+				<li><a href='http://gmail.com'>varadhan198@gmail.com</a>
+				<li><a>9488235681<a>
+				<li><a href='http://github.com/Varu01234'>www.github.com/Varu01234</a>
+				</ul></p>
+ </div>
 </body>
 </html>

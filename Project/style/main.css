@@ -1,8 +1,15 @@
+#tab
+{
+	position:relative;
+	top:100px;
+	left:30px;
+}
+
 #men
 {
-	
+	position:relative;
 	top:0px;
-	left:100px;
+	left:50px;
 }
 
 #arc
