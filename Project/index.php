@@ -108,9 +108,9 @@ $right_Move2 ='<a href="index.php?id=1">Oldest Article >></a>';
 	$(function(){
         $('.log').tabSlideOut({
             tabHandle: '.handl',                     //class of the element that will become your tab
-            pathToTabImage: 'login.jpg', //path to the image for the tab //Optionally can be set using css
+            pathToTabImage: 'button-login.jpg', //path to the image for the tab //Optionally can be set using css
             imageHeight: '180px',                     //height of tab image           //Optionally can be set using css
-            imageWidth: '50px',                       //width of tab image            //Optionally can be set using css
+            imageWidth: '2000px',                       //width of tab image            //Optionally can be set using css
             tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
             speed: 300,                               //speed of animation
             action: 'click',                          //options: 'click' or 'hover', action to trigger animation
@@ -425,12 +425,15 @@ print"$right_Move2"; ?></span><br /><br /></td>
  </div>
  <div class="log">
             <a class="handl" href="http://link-for-non-js-users.html">Content</a>
-            <h3>Contact me</h3>
-            <p><ul>
-				<li><a href='http://gmail.com'>varadhan198@gmail.com</a>
-				<li><a>9488235681<a>
-				<li><a href='http://github.com/Varu01234'>www.github.com/Varu01234</a>
-				</ul></p>
+            
+			<?php include('login_page.php');?>
+			<?php
+			
+				include('register_page.php');
+			
+			?>
  </div>
+ 
+	
 </body>
 </html>
