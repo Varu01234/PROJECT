@@ -26,6 +26,14 @@
     top: 0px;
     left: 0px;
 }
+#content1 {
+    position: relative;
+}
+#content1 img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 body {
 	background: url(back6.jpg) top center  ;

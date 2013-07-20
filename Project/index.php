@@ -120,8 +120,18 @@ $right_Move2 ='<a href="index.php?id=1">Oldest Article >></a>';
         });
 
     });
+	
  </script>
-  <style type="text/css">
+ <script>
+	 
+$(document).ready(function(){
+  $(".first").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+ </script>
+   <style type="text/css">
       
       .slide-out-div,.log {
           padding: 20px;
@@ -142,11 +152,28 @@ print"$title"; ?></title>
 .style4 {font-size: 15px}
 .style5 {font-size: 30px}
 .style6 {font-size: 12px}
+#panel
+{
+padding:30px;
+display:none;
+}
+#panel
+{
+padding:5px;
+text-align:center;
+
+}
 
 </style>
 </head>
 
 <body leftmargin="0">
+<div id="content1">
+   <a  class="first"><img src=arrow-right.png /></a>
+   <div id="panel"><font color=red face=verdana>YET TO COME</font></div>
+
+</div>
+
 <div id="content">
     <img src=final1.png />
 </div>
