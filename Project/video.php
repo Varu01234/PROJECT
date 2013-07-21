@@ -19,9 +19,9 @@
 <tr><td colspan=2 align=center><span class="style1">Videos</span>
 <tr><td colspan=2 align=center><img src="images/divide.png" />
 <tr><td align=right><iframe width="400" height="300" src="//www.youtube.com/embed/YrtANPtnhyg" frameborder="0" allowfullscreen></iframe>
-	<td align=right><iframe width="400" height="300" src="//www.youtube.com/embed/N_m56irWKeI" frameborder="0" allowfullscreen></iframe>
+	<td align=right><iframe width="400" height="300" src="//www.youtube.com/embed/FnyqtEMR9K8" frameborder="0" allowfullscreen></iframe>
 <tr><td align=right><font color=red face=verdana>Pranav Mistry: The thrilling potential of SixthSense technology</font>
-	<td align=right><font color=red face=verdana>World's Top3 Humanoid Robots - Asimo vs HPR-4 vs NAO!</font>
+	<td align=right><font color=red face=verdana>creating models using creo</font>
 </table>
 
 <ul id=menu>

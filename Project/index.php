@@ -373,12 +373,34 @@ while($a=mysql_fetch_row($id))
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div id=men>
-<ul id=menu>
+<div id="demo">
+	<nav>
+		<ul>
+			<li>
+				<a href="About.php">
+					<span>ABOUT</span>
+				</a>
+			</li>
+			<li>
+				<a href="All.php">
+					<span>ENTRIES</span>
+				</a>
+			</li>
+			<li>
+				<a href="poll.php">
+					<span>POLL</span>
+				</a>
+			</li>
+			<li>
+				<a href="video.php">
+					<span>VIDEOS</span>
+				</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
 
-<li><a href="About.php"><font face=verdana>About</font></a></li>
-<li><a href="All.php"><font face=verdana>All Entries</font></a></li>
-<li><a href="poll.php"><font face=verdana>Poll Archives</font></a></li>
-<li><a href="video.php"><font face=verdana>Videos</font></a></li>
 </div>
 <font face="Arial, Helvetica, sans-serif">
 <div id=tab>
@@ -450,16 +472,7 @@ print"$right_Move2"; ?></span><br /><br /></td>
 				<li><a href='http://github.com/Varu01234'>www.github.com/Varu01234</a>
 				</ul></p>
  </div>
- <div class="log">
-            <a class="handl" href="http://link-for-non-js-users.html">Content</a>
-            
-			<?php include('login_page.php');?>
-			<?php
-			
-				include('register_page.php');
-			
-			?>
- </div>
+ 
  
 	
 </body>
