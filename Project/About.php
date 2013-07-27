@@ -44,10 +44,6 @@
 </table>
 </div>
 
-<ul id=menu>
-<li><a href="index.php"><font face=verdana>Home</font></a></li>
-<li><a href="All.php"><font face=verdana>All Entries</font></a></li>
-<li><a href="poll.php"><font face=verdana>Poll Archives</font></a></li>
-<li><a href="video.php"><font face=verdana>Videos</font></a></li>
+
 </body>
 </html>

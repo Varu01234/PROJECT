@@ -39,10 +39,5 @@ $result .= '<table align=center><tr><td width="100"><td width="40" align="left">
 </table>
 </div>
 
-<ul id=menu>
-<li><a href="index.php"><font face=verdana>Home</font></a></li>
-<li><a href="About.php"><font face=verdana>About</font></a></li>
-<li><a href="poll.php"><font face=verdana>Poll Archives</font></a></li>
-<li><a href="video.php"><font face=verdana>Videos</font></a></li>
-</body>
+
 </html>

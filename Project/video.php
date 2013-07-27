@@ -19,14 +19,12 @@
 <tr><td colspan=2 align=center><span class="style1">Videos</span>
 <tr><td colspan=2 align=center><img src="images/divide.png" />
 <tr><td align=right><iframe width="400" height="300" src="//www.youtube.com/embed/YrtANPtnhyg" frameborder="0" allowfullscreen></iframe>
-	<td align=right><iframe width="400" height="300" src="//www.youtube.com/embed/FnyqtEMR9K8" frameborder="0" allowfullscreen></iframe>
+	<td align=right><iframe width="400" height="300" src="//www.youtube.com/embed/cx4WCvT_aH8" frameborder="0" allowfullscreen></iframe>
 <tr><td align=right><font color=red face=verdana>Pranav Mistry: The thrilling potential of SixthSense technology</font>
-	<td align=right><font color=red face=verdana>creating models using creo</font>
+	<td align=right><font color=red face=verdana>designing bike in creo</font>
 </table>
 
-<ul id=menu>
-<li><a href="index.php"><font face=verdana>Home</font></a></li>
-<li><a href="About.php"><font face=verdana>About</font></a></li>
-<li><a href="All.php"><font face=verdana>All Entries</font></a></li>
-<li><a href="poll.php"><font face=verdana>Poll Archives</font></a></li>
+
+
+
 </html>

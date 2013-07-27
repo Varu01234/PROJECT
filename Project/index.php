@@ -129,7 +129,57 @@ $(document).ready(function(){
     $("#panel").slideToggle("slow");
   });
 });
+$(document).ready(function(){
+  $("#e").click(function(){
+    window.location="poll.php";
+  });
+  });
 
+
+
+$(document).ready(function(){
+  $("#entry").click(function(){
+    window.location="All.php";
+  });
+});
+$(document).ready(function(){
+  $("#about").click(function(){
+    window.location="About.php";
+  });
+});
+$(document).ready(function(){
+  $("#video").click(function(){
+    window.location="video.php";
+  });
+});
+$(function(){
+ $('#entry').mouseover(function(){
+  $('.sec1').animate({left:'460px'},300)
+ })
+}).mouseout(function(){
+  $('.sec1').stop().animate({left:'615px'},300) 
+}); 
+ $(function(){
+ $('#e').mouseover(function(){
+  $('.sec2').animate({top:'100px'},300)
+ })
+}).mouseout(function(){
+  $('.sec2').stop().animate({top:'255px'},300) 
+});
+$(function(){
+ $('#video').mouseover(function(){
+  $('.sec3').animate({left:'615px'},300)
+ })
+}).mouseout(function(){
+  $('.sec3').stop().animate({left:'460px'},300) 
+});
+$(function(){
+ $('#about').mouseover(function(){
+  $('.sec4').animate({top:'255px'},300)
+ })
+}).mouseout(function(){
+  $('.sec4').stop().animate({top:'100px'},300) 
+});
  </script>
    <style type="text/css">
       
@@ -138,7 +188,8 @@ $(document).ready(function(){
           width: 250px;
           background: #ccc;
           border: 1px solid #29216d;
-      }      
+      } 
+		
    </style>
 
 
@@ -164,18 +215,38 @@ text-align:center;
 
 }
 
+
+
 </style>
+
 </head>
 
 <body leftmargin="0">
 <div id="content1">
-   <a  class="first"><img src=arrow-right.png /></a>
+   <a  class="first"><img src='arrow-right.png'/></a>
    <div id="panel"><font color=red face=verdana>YET TO COME</font></div>
+
+</div>
+<div id="e">
+<img src="final/poll2.png" class=fir2 />
+<img src="final/poll1.png" class=sec2 />
 
 </div>
 
 <div id="content">
-    <img src=final1.png />
+    <img src=vara1.png />
+</div>
+<div id="entry">
+   <img  src='final/entry2.png' class=fir1 /></a>
+   <img src="final/entry1.png" class=sec1 />
+</div>
+<div id="about">
+   <img  src='final/aboutus2.png' class=fir4 /></a>
+   <img src="final/aboutus1.png" class=sec4 />
+</div>
+<div id="video">
+   <img  src='final/video2.png' class=fir3 /></a>
+   <img src="final/video1.png" class=sec3 />
 </div>
 <div id='arc'>
 <u><a href='All.php'><font face=verdana color=red>ARCHIVES</font></a></u><?php
@@ -372,36 +443,7 @@ while($a=mysql_fetch_row($id))
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id=men>
-<div id="demo">
-	<nav>
-		<ul>
-			<li>
-				<a href="About.php">
-					<span>ABOUT</span>
-				</a>
-			</li>
-			<li>
-				<a href="All.php">
-					<span>ENTRIES</span>
-				</a>
-			</li>
-			<li>
-				<a href="poll.php">
-					<span>POLL</span>
-				</a>
-			</li>
-			<li>
-				<a href="video.php">
-					<span>VIDEOS</span>
-				</a>
-			</li>
-			
-		</ul>
-	</nav>
-</div>
 
-</div>
 <font face="Arial, Helvetica, sans-serif">
 <div id=tab>
 
@@ -444,6 +486,12 @@ while($a=mysql_fetch_row($id))
 <img src="images/divide.png" /><br /><br /></td>
 </tr>
 <tr>
+<td colspan=5 align=left><!-- begin htmlcommentbox.com -->
+ <div id="HCB_comment_box"> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(""+window.location || hcb_user.PAGE), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24xyQioc50bbw.wgC2R22h0%2F"+"&opts=16862&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end htmlcommentbox.com -->
+<tr>
 <td width="160" align="left"><span class="style4 black"><?php 
  
 print"$Left_move1"; ?></span><br /><br /></td>
@@ -467,13 +515,14 @@ print"$right_Move2"; ?></span><br /><br /></td>
             <a class="handle" href="http://link-for-non-js-users.html">Content</a>
             <h3>Contact me</h3>
             <p><ul>
-				<li><a href='http://gmail.com'>varadhan198@gmail.com</a>
-				<li><a>9488235681<a>
-				<li><a href='http://github.com/Varu01234'>www.github.com/Varu01234</a>
+				<li><font face=verdana><a href='http://gmail.com'>varadhan198@gmail.com</a></font>
+				<li><a><font face=verdana>9488235681</font><a>
+				<li><a href='http://github.com/Varu01234'><font face=verdana>www.github.com/Varu01234</font></a>
 				</ul></p>
  </div>
  
  
 	
 </body>
+
 </html>

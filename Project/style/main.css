@@ -1,55 +1,26 @@
-nav ul {
-	list-style: none; overflow: hidden; position: relative;
+#entry img
+{
+	position:absolute;
+   top: 255px;
+    left: 615px;
 }
-	nav ul li {
-		float: left; margin: 0 20px 0 0;
-	}
-		nav ul li a {
-			display: block; width: 120px; height: 120px;
-			background-image: url(icons.png); background-repeat: no-repeat;
-		}
-			nav ul li:nth-child(1) a {
-				background-color: #5bb2fc;
-				background-position: 28px 28px;
-			}
-			nav ul li:nth-child(2) a {
-				background-color: #ff7a85;
-				background-position: 28px -96px;
-			}
-			nav ul li:nth-child(3) a {
-				background-color: #ffa659;
-				background-position: 28px -222px;
-			}
-			nav ul li:nth-child(4) a {
-				background-color: #ff7a85;
-				background-position: 28px -342px;
-			}
-		
-				nav ul li a span {
-					font: 50px "Dosis", sans-serif; text-transform: uppercase; 
-					position: absolute; left: 580px; top: 29px;
-					display: none;
-				}
-					nav ul li a:hover span {
-						display: block;
-					}
 				
-				nav ul li:nth-child(1) a span {
-					color: #5bb2fc;
-				}
-				nav ul li:nth-child(2) a span {
-					color: #ff7a85;
-				}
-				nav ul li:nth-child(3) a span {
-					color: #ffa659;
-				}
-				nav ul li:nth-child(4) a span {
-					color: #ff7a85;
-				}
+#about img
+{
+	position:absolute;
+   top: 100px;
+    left: 615px;
+}
+#video img
+{
+	position:absolute;
+   top: 100px;
+    left: 460px;
+}					
 #tab
 {
 	position:relative;
-	top:100px;
+	top:315px;
 	left:30px;
 }
 
@@ -74,6 +45,19 @@ nav ul {
     top: 0px;
     left: 0px;
 }
+
+#e img {
+	position:absolute;
+   top: 255px;
+    left: 460px;
+}
+
+#f img {
+	position:absolute;
+   top: 120px;
+    left: 600px;
+}
+
 #content1 {
     position: relative;
 }
@@ -84,7 +68,7 @@ nav ul {
 }
 
 body {
-	background: #313145 ;
+	background-image: url('vara2.jpg') ;
 }
 a:link {
 	text-decoration:none; color:#000000
